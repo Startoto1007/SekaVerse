@@ -1,0 +1,81 @@
+/* css/style.css - shared styles for SekaVerse site */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#050011;
+  --card:rgba(255,255,255,0.04);
+  --accent:#ff6600;
+  --glass:rgba(255,255,255,0.06);
+  --text:#eaeef8;
+  --muted:#b8c0d6;
+}
+html,body{height:100%}
+body{
+  font-family: 'Orbitron', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+  padding-bottom:60px;
+}
+
+/* Speed-light starfield canvas */
+#spaceCanvas{
+  position:fixed;inset:0;width:100%;height:100%;z-index:-1;
+  background:linear-gradient(180deg,#030014 0%, #050011 60%);
+}
+
+/* Hero */
+.hero{
+  min-height:70vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:48px 20px;
+}
+.hero h1{font-size:clamp(28px,6vw,48px);color:var(--accent);text-shadow:0 0 20px rgba(255,102,0,0.25)}
+.hero p{color:var(--muted);max-width:900px;margin-top:12px;line-height:1.5}
+
+/* Bots grid - fluid responsive */
+.bots{display:grid;gap:20px;padding:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));max-width:1200px;margin:0 auto}
+.bot-card{
+  background:var(--card);
+  border-radius:14px;padding:18px;
+  border:1px solid rgba(255,255,255,0.03);
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  transition:transform .25s ease,box-shadow .25s ease;
+  backdrop-filter: blur(6px);
+}
+.bot-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.bot-card .avatar{width:120px;height:120px;border-radius:50%;background:#0b0b14;margin-bottom:12px;display:block;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.bot-card .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.bot-card h2{color:var(--accent);margin-bottom:8px}
+.bot-card p{color:var(--muted);font-size:0.95rem;line-height:1.4;margin-bottom:12px;padding:0 6px}
+.bot-card a.button{display:inline-block;padding:10px 18px;border-radius:20px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+.bot-card a.button:hover{background:#ff7f33}
+
+/* Bot detail page */
+.bot-header{position:relative;padding-bottom:20px}
+.bot-banner{width:100%;height:160px;background:#0b0b14;object-fit:cover;border-bottom:1px solid rgba(255,255,255,0.03)}
+.bot-profile-container{max-width:1100px;margin:-60px auto 0;display:flex;gap:18px;align-items:center;padding:0 18px}
+.bot-profile{width:120px;height:120px;border-radius:16px;overflow:hidden;border:4px solid rgba(255,255,255,0.06);background:#0b0b14}
+.bot-title{display:flex;flex-direction:column;color:var(--text)}
+.bot-title h1{font-size:clamp(20px,3vw,34px);color:var(--accent)}
+.add-btn{margin-top:8px;padding:8px 12px;border-radius:12px;background:#0a84ff;color:white;text-decoration:none;font-weight:700}
+
+/* Content */
+.bot-content{max-width:1100px;margin:28px auto;padding:0 18px;display:grid;gap:20px}
+.bot-content section{background:var(--glass);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+.doc-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.command-card{padding:12px;border-radius:10px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.02)}
+.command-card h4{margin-bottom:8px;color:var(--accent)}
+.command-card p{color:var(--muted);font-size:0.95rem;line-height:1.4}
+
+/* small screens */
+@media (max-width:720px){
+  .bot-profile-container{flex-direction:column;align-items:center;margin-top:-40px}
+  .bot-banner{height:120px}
+  .bot-content{padding:0 14px}
+}

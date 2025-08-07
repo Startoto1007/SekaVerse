@@ -1,0 +1,26 @@
+{
+  "categories": {
+    "Création": [
+      {
+        "name": "pixelwar",
+        "description": "Lancer une Pixel War.",
+        "howto": "/pixelwar create - Initialise une zone de combat pixel.",
+        "usage": "/pixelwar create #arena"
+      },
+      {
+        "name": "design",
+        "description": "Commande de design avec tips.",
+        "howto": "/design request <brief> - Ouvre une commande de design, possibilité de tips.",
+        "usage": "/design request \"Logo futuriste\""
+      }
+    ],
+    "Marketplace": [
+      {
+        "name": "tip",
+        "description": "Envoyer un tip à un créateur.",
+        "howto": "/tip <user> <montant> - Envoie un paiement.",
+        "usage": "/tip @artist 5"
+      }
+    ]
+  }
+}

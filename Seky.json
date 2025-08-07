@@ -1,0 +1,32 @@
+{
+  "categories": {
+    "Sécurité": [
+      {
+        "name": "scan",
+        "description": "Analyse en profondeur pour détecter raids.",
+        "howto": "/scan - Lance une analyse du serveur pour comportements suspects.",
+        "usage": "/scan"
+      },
+      {
+        "name": "quarantine",
+        "description": "Isole un utilisateur suspect.",
+        "howto": "/quarantine <user> - Restreint l'accès temporairement.",
+        "usage": "/quarantine @suspect 24h"
+      },
+      {
+        "name": "config",
+        "description": "Configure les seuils anti-raid.",
+        "howto": "/config set threshold <valeur> - Définit le seuil de déclenchement.",
+        "usage": "/config set threshold 100"
+      }
+    ],
+    "Logs": [
+      {
+        "name": "reports",
+        "description": "Affiche les rapports d'incidents.",
+        "howto": "/reports - Liste les derniers rapports.",
+        "usage": "/reports"
+      }
+    ]
+  }
+}

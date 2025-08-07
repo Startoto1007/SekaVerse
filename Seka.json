@@ -1,0 +1,26 @@
+{
+  "categories": {
+    "Divertissement": [
+      {
+        "name": "card",
+        "description": "Crée/affiche une créature-carte.",
+        "howto": "/card create <nom> - Crée une carte.",
+        "usage": "/card view 1234"
+      },
+      {
+        "name": "event",
+        "description": "Gère un événement.",
+        "howto": "/event create - Crée un événement public.",
+        "usage": "/event create \"Tournoi\""
+      }
+    ],
+    "Automatisation": [
+      {
+        "name": "autopost",
+        "description": "Gère la publication automatique.",
+        "howto": "/autopost enable <channel> - Active autopost pour YT/Twitch.",
+        "usage": "/autopost enable #annonces"
+      }
+    ]
+  }
+}

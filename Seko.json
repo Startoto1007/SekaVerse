@@ -1,0 +1,38 @@
+{
+  "categories": {
+    "Économie": [
+      {
+        "name": "work",
+        "description": "Gagne des SekaCoins en travaillant.",
+        "howto": "/work - Exécute un travail aléatoire et reçoit des SekaCoins.",
+        "usage": "/work"
+      },
+      {
+        "name": "balance",
+        "description": "Montre votre solde.",
+        "howto": "/balance - Affiche vos SekaCoins et SekaXp.",
+        "usage": "/balance"
+      },
+      {
+        "name": "transfer",
+        "description": "Transfère des SekaCoins à un autre utilisateur.",
+        "howto": "/transfer <utilisateur> <montant> - Envoie des SekaCoins.",
+        "usage": "/transfer @user 500"
+      }
+    ],
+    "Commerce": [
+      {
+        "name": "shop",
+        "description": "Ouvre la boutique.",
+        "howto": "/shop - Liste les objets disponibles.",
+        "usage": "/shop"
+      },
+      {
+        "name": "buy",
+        "description": "Achete un objet.",
+        "howto": "/buy <item> - Achète dans la boutique.",
+        "usage": "/buy potion"
+      }
+    ]
+  }
+}
