@@ -1,0 +1,24 @@
+{
+    "categories": {
+        "Économie": [
+            {
+                "name": "work",
+                "description": "Permet de travailler pour gagner des SekaCoins",
+                "howto": "Tapez !work pour effectuer un travail et recevoir une récompense aléatoire.",
+                "image": ""
+            },
+            {
+                "name": "balance",
+                "description": "Consultez votre portefeuille",
+                "howto": "Tapez !balance pour voir combien de SekaCoins vous possédez."
+            }
+        ],
+        "Commerce": [
+            {
+                "name": "buy",
+                "description": "Achetez un objet dans la boutique",
+                "howto": "Tapez !buy <objet> pour dépenser vos SekaCoins."
+            }
+        ]
+    }
+}
